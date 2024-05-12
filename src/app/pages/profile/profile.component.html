@@ -1,0 +1,45 @@
+<mat-card *ngIf="user" class="glass">
+    <h3 class="ml10 mt10">My Profile</h3>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="profile-image">
+                    <h1 class="mt20">{{user.firstName}}  {{user.lastName}}</h1>
+                </div>
+                <div class="row">
+                    <div class="mt20" class="col-md-10 offset-md-1">
+                        <!-- table details -->
+                        <table class="table">
+                            <tr>
+                                <td>Username</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Userid</td>
+                                <td>EXAM{{user.id}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td>Phone</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled ? "ACTIVE" : "NOTACTIVE" }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="text-center ml10">
+        <!-- <button mat-raised-button color="primary">UPDATE</button>
+        <button class="ml20" mat-raised-button color="accent">SHARE</button> -->
+    </mat-card-actions>
+</mat-card>

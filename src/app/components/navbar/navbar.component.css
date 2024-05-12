@@ -1,0 +1,55 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.glass {    
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.font {
+    background: linear-gradient(to right, #00B4DB, #FFD23F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+
+
+/* @keyframes colorful-border {
+    0% {
+        border-color: #ff0000; 
+    }
+    25% {
+        border-color: #00ff00; 
+    }
+    50% {
+        border-color: #0000ff; 
+    }
+    75% {
+        border-color: #ff00ff; 
+    }
+    100% {
+        border-color: #ffff00; 
+    }
+}
+
+.glass {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: colorful-border 5s linear infinite; 
+} */

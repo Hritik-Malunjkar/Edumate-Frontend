@@ -1,0 +1,38 @@
+<div *ngFor="let c of categories">
+    <mat-card class="glass">
+        <mat-list>
+            <mat-list-item>
+                <div class="category-item">
+                    <div class="category-info">
+                        <div mat-line>
+                            <mat-card-title>
+                                {{ c.title }}
+                            </mat-card-title>
+                        </div>
+                        <div mat-line>
+                            <mat-card-subtitle>
+                                {{ c.description }}
+                            </mat-card-subtitle>
+                        </div>
+                    </div>
+                    <div class="delete-button-container">
+                        <button mat-icon-button color="warn" (click)="deleteCategory(c.cid)">
+                            <mat-icon>delete_forever</mat-icon>
+                        </button>
+                        <button [routerLink]="'/admin/add-category/'+ c.cid" mat-icon-button color="primary">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+    <div class="card-spacing"></div>
+</div>
+
+<div class="container text-center mb20 ">
+    <button routerLink="/admin/add-category" class="glow-on-hover">
+        <!-- <mat-icon>library_add</mat-icon> -->
+        Add new Category
+    </button>
+</div>

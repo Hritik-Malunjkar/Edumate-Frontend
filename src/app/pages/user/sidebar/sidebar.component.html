@@ -1,0 +1,36 @@
+<!-- <mat-card>
+    <mat-action-list>
+        <div mat-subheader>Available Categories</div>
+        <button routerLink="/user-dashboard/0" mat-list-item><mat-icon>quiz</mat-icon>All Quizzes</button>
+        <button [routerLink]="'/user-dashboard/' + c.cid" mat-list-item *ngFor="let c of categories"><mat-icon mat-list-icon>quiz</mat-icon>{{c.title}}</button>
+    </mat-action-list>
+</mat-card> -->
+
+
+<mat-card class="glass">
+    <mat-action-list>
+        <div mat-subheader>Available Categories</div>
+        <button routerLink="/user-dashboard/load-quiz/0" mat-list-item>
+            <div class="menu-item">
+                <mat-icon>quiz</mat-icon>
+                <span class="menu-text">All Quizzes</span>
+            </div>
+        </button>
+        <button [routerLink]="'/user-dashboard/load-quiz/' + c.cid" mat-list-item *ngFor="let c of categories">
+            <div class="menu-item"> 
+                <mat-icon mat-list-icon>assignment_turned_in</mat-icon>
+                <span class="menu-text">{{ c.title }}</span>
+            </div>
+        </button>
+        <button [routerLink]="'/user-dashboard/contact-us'" mat-list-item>
+            <div class="menu-item">
+                <mat-icon>perm_phone_msg</mat-icon>
+                <span class="menu-text">Contact Us</span>
+            </div>
+        </button>
+    </mat-action-list>
+   
+</mat-card>
+
+
+  

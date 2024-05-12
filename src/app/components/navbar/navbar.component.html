@@ -1,0 +1,56 @@
+<!-- <div class="container-fluid">
+    <mat-toolbar color="primary"> -->
+        <!-- <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu_book</mat-icon>
+        </a> -->
+        <!-- <span>Examportal</span>
+        <span class="example-spacer"></span>
+        <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon mr20 ml20"
+            aria-label="Example icon-button with heart icon">
+            Login
+        </a>
+    
+        <a *ngIf="!isLoggedIn" [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon mr20 ml20"
+            aria-label="Example icon-button with heart icon">
+            Register
+        </a>
+    
+        <button (click)="logout()" *ngIf="login.isLoggedIn()" mat-icon-button class="example-icon favorite-icon mr20 ml20"
+            aria-label="Example icon-button with heart icon">
+            Logout
+        </button>
+    
+        <a *ngIf="isLoggedIn && user" mat-button routerLink="/admin/profile"
+            class="example-icon favorite-icon mr20 ml20 ml20 mt20" aria-label="Example icon-button with heart icon">
+            {{login.getuser().username}}
+        </a>
+    </mat-toolbar>
+</div> -->
+
+<div class="container-fluid">
+    <mat-toolbar class="glass">
+        <a mat-icon-button class="example-icon" aria-label="Menu icon">
+            <mat-icon>menu_book</mat-icon>
+        </a>
+        <span class="font">Edumate</span>
+        <span class="example-spacer"></span>
+
+        <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-button class="ml-sm-2" aria-label="Login">
+            Login
+        </a>
+
+        <a *ngIf="!isLoggedIn" [routerLink]="'/signup'" mat-button class="ml-sm-2" aria-label="Register">
+            Register
+        </a>
+
+        <a *ngIf="isLoggedIn && user" class="font" aria-label="User Profile">
+            {{ login.getuser().username }}
+        </a>
+
+        <button (click)="logout()" *ngIf="login.isLoggedIn()" mat-button class="ml-sm-2" aria-label="Logout">
+            <mat-icon>logout</mat-icon>
+        </button>
+
+        
+    </mat-toolbar>
+</div>

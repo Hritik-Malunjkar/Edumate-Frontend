@@ -1,0 +1,38 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="glass">
+                    <div class="p-4">
+                        <div class="container text-center">
+                            <img class="img1" src="https://sudishworld.com/icon/online.png">
+                        </div>
+                        <h1 class="text-center">Login Here !!</h1>
+                        <form>
+               
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input [(ngModel)]="loginData.username" name="username" required matInput
+                                    placeholder="Enter here">
+                            </mat-form-field>
+
+                          
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>User Password</mat-label>
+                                <input [(ngModel)]="loginData.password" name="password" type="password" required
+                                    matInput placeholder="Enter here">
+                            </mat-form-field>
+
+                            <div class="conatiner text-center ml10">
+                                <button class="glow-on-hover" (click)="formSubmit()" mat-stroked-button color="primary"
+                                    type="submit">Login</button>
+                                <button [routerLink]="'/forget-password'" class="ml20 glow-on-hover" mat-stroked-button
+                                    color="warn">Forgot Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
